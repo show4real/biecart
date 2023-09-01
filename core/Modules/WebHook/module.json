@@ -1,0 +1,35 @@
+{
+    "name": "WebHook",
+    "alias": "webhook",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\WebHook\\Providers\\WebHookServiceProvider",
+        "Modules\\WebHook\\Providers\\EventServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "nazmartMetaData": {
+        "admin_settings": {
+            "show_admin_landlord": true,
+            "show_admin_tenant": false,
+            "menu_item": [
+                {
+                    "id" : "webhook-manage-settings-menu",
+                    "label": "Webhook Manage",
+                    "route": "webhook.index",
+                    "parent": null,
+                    "icon": "mdi mdi-settings"
+                },
+                {
+                    "id" : "webhook-manage-settings-all-menu",
+                    "label": "All WebHooks",
+                    "route": "webhook.index",
+                    "parent": "webhook-manage-settings-menu"
+                }
+            ]
+        }
+    }
+}
